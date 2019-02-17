@@ -7,3 +7,7 @@ Author URI: kamal.pw
 Description: This is a WP Development Course theme.
 tags: one, two, three
 */
+
+img{
+    max-width: 100%;
+}

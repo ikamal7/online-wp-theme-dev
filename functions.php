@@ -15,6 +15,7 @@ add_action('after_setup_theme', 'wp_dev_theme_support');
 //get_template_directory_uri().'something.css' //version 4.7
 
 function wp_style_load(){
+    wp_enqueue_style('bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
     wp_enqueue_style('something', get_theme_file_uri('something.css'));
 
     //Default Style CSS Load
