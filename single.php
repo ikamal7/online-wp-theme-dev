@@ -13,7 +13,6 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <h2>Our All Posts</h2>
             <?php 
     
             while(have_posts()){
@@ -24,26 +23,11 @@
                 <h6><?php the_category(); ?></h6>
                 <p><?php the_tags(); ?></p>
                 <p><?php the_date(); ?></p>
-                <p><?php the_excerpt(); ?></p>
-                <a class="btn btn-success d-inline-block" href="<?php the_permalink(); ?>">Read more</a>
+                <p><?php the_content(); ?></p>
                <?php
             }
             
             ?>
-            <hr>
-             <?php
-             the_posts_pagination(array(
-                 'mid_size' => 3,
-                 'prev_text' => 'Previous',
-                 'next_text' => 'Next',
-                 'screen_reader_text' => ' ',
-
-             ));
-             
-             //the_posts_navigation(array( -->
-                // 'prev_text' => 'Previous',
-                // 'next_text' => 'Next',
-                // 'screen_reader_text' => ' ')); ?>
         </div>
     </div>
 </div>
