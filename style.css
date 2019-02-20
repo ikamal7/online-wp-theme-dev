@@ -11,3 +11,28 @@ tags: one, two, three
 img{
     max-width: 100%;
 }
+
+ul.our-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+}
+
+ul.our-menu li {
+    display: inline-block;
+}
+
+ul.our-menu li a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+ul.our-menu li a:hover {
+    color: #0f0fe5;
+}
