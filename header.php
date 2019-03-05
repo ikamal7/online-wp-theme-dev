@@ -13,7 +13,7 @@
 <div class="container mb-5">
     <div class="row">
         <div class="col-md-4 text-right">
-           <a href="<?php home_url('/') ?>"><h2> <?php bloginfo('name');?></h2></a>
+           <a href="<?php echo home_url('/') ?>"><h2> <?php bloginfo('name');?></h2></a>
         </div>
         <div class="col-md-6">
             <?php
