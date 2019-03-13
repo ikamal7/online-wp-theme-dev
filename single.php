@@ -13,6 +13,9 @@
                 <h6><?php the_category(); ?></h6>
                 <p><?php the_tags(); ?></p>
                 <p><?php the_date(); ?></p>
+                <p>Writer: <?php echo get_post_meta(get_the_ID(), 'writer', true); ?></p>
+                <p>Published: <?php echo get_post_meta(get_the_ID(), 'Published', true); ?></p>
+                <p>facebook: <i class="fab fa-<?php echo get_post_meta(get_the_ID(), 'facebook', true); ?>-square"></i>  </p>
                 <p><?php the_content(); ?></p>
                <?php
             }
